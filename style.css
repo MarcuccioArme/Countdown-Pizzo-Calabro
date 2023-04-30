@@ -52,12 +52,12 @@ body {
 }
 
 .countdown h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-bottom: 1.5rem;
 
     background-color: rgba(0, 0, 0, 0.5);
-	padding: 5px;
-	border-radius: 10px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 #countdown {
@@ -68,8 +68,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .oggetti {
@@ -82,12 +82,8 @@ body {
 
 @media screen and (min-width: 375px) {
 
-    .countdown h1 {
-        padding: 10px;
-    }
-
     #countdown {
-        font-size: 5.5em;
+        font-size: 4.5em;
     }
     
 }
@@ -95,7 +91,7 @@ body {
 @media screen and (min-width: 425px) {
 
     #countdown {
-        font-size: 6.5em;
+        font-size: 5em;
     }
     
 }
@@ -104,51 +100,81 @@ body {
 @media screen and (min-width: 481px) {
 
     #countdown {
-        font-size: 7em;
+        font-size: 6em;
     }
     
 }
     
     /* - Small screens, laptops - */
 @media screen and (min-width: 670px) {
-        
+
+    .countdown h1 {
+        font-size: 2.5em;
+    }
+
     #countdown {
         font-size: 5.5em;
+
+        margin: 0;
     }
         
 }
     
     /* - Desktops, large screens - */
 @media screen and (min-width: 1024px) {
-        
+
+    .countdown h1 {
+        font-size: 2.5em;
+    }
+
     #countdown {
         font-size: 7.5em;
+
+        margin: 0;
     }
         
 }
     
     /* - Extra large screens, TV - */
 @media screen and (min-width: 1440px) {
-    
+
+    .countdown h1 {
+        font-size: 2.5em;
+    }
+
     #countdown {
         font-size: 10em;
+
+        margin: 0;
     }
     
 }
 
 @media screen and (min-width: 1850px) {
-        
+
+    .countdown h1 {
+        font-size: 2.5em;
+    }
+
     #countdown {
         font-size: 12em;
+
+        margin: 0;
     }
 
 }
     
     /* - 4K - */
 @media screen and (min-width: 2000px) {
-        
+
+    .countdown h1 {
+        font-size: 2.5em;
+    }
+
     #countdown {
         font-size: 15em;
+
+        margin: 0;
     }
 
 }
