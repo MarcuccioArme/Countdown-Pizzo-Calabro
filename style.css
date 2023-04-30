@@ -61,13 +61,13 @@ body {
 }
 
 #countdown {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: bold;
     text-align: center;
 
     background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -91,13 +91,17 @@ body {
 @media screen and (min-width: 425px) {
 
     #countdown {
-        font-size: 5em;
+        font-size: 5.5em;
     }
     
 }
 
     /* - iPad, Tablets - */
 @media screen and (min-width: 481px) {
+
+    .countdown h1 {
+        font-size: 2em;
+    }
 
     #countdown {
         font-size: 6em;
@@ -153,7 +157,7 @@ body {
 @media screen and (min-width: 1850px) {
 
     .countdown h1 {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     #countdown {
@@ -168,7 +172,7 @@ body {
 @media screen and (min-width: 2000px) {
 
     .countdown h1 {
-        font-size: 2.5em;
+        font-size: 4em;
     }
 
     #countdown {
