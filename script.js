@@ -25,10 +25,9 @@ function createVideoElement() {
     video.muted = true;
     video.playsInline = true;
 
-    video.addEventListener("ended", () => {
+    video.addEventListener("error", () => {
         currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-        fullscreenVideo.innerHTML = "";
-        fullscreenVideo.appendChild(createVideoElement());
+        video.src = videos[currentVideoIndex];
     });
 
     return video;
