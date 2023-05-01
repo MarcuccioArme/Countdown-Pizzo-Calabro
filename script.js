@@ -30,6 +30,12 @@ function createVideoElement() {
         video.src = videos[currentVideoIndex];
     });
 
+    video.addEventListener("ended", () => {
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        fullscreenVideo.innerHTML = "";
+        fullscreenVideo.appendChild(createVideoElement());
+    });
+
     return video;
 }
 
