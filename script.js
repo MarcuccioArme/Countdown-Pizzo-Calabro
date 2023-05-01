@@ -13,3 +13,26 @@ var x = setInterval(function() {
             document.getElementById("countdown").innerHTML = "EXPIRED";
         }
 }, 1000);
+
+const videos = ["video/video1.mp4", "video/video2.mp4", "video/video3.mp4", "video/video4.mp4"];
+let currentVideoIndex = 0;
+
+function createVideoElement() {
+    const video = document.createElement("video");
+    video.src = videos[currentVideoIndex];
+    video.autoplay = true;
+    video.loop = false;
+    video.muted = true;
+    video.playsInline = true;
+
+    video.addEventListener("ended", () => {
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        fullscreenVideo.innerHTML = "";
+        fullscreenVideo.appendChild(createVideoElement());
+    });
+
+    return video;
+}
+
+const fullscreenVideo = document.querySelector(".video-container");
+fullscreenVideo.appendChild(createVideoElement());
